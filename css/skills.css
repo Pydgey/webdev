@@ -1,4 +1,5 @@
 *{ margin:0; padding:0; border:0;}
+
 body{
     background-image: url(../img/bg.jpg);
     background-attachment: fixed;
@@ -54,7 +55,7 @@ body{
     text-decoration: none;
 }
 #botoes ul li a:hover{
-    border-bottom: 3px solid #00bac6;
+    border-bottom:2px solid #00bac6;
     color: #00bac6;
 }
 
@@ -63,6 +64,7 @@ body{
 #skill-table{
     margin-top: 15px;
     margin-left: 5%;
+    padding-bottom: 3px;
 }
 #graphic img {
     margin-top: 25px;
@@ -88,7 +90,7 @@ body{
     font-family:'Times New Roman', Times, serif;
     color:black;
     padding-left: 10px;
-    padding-bottom: 2px;
+    padding-bottom: 5px;
 }
 
 #tables{
@@ -112,3 +114,28 @@ table {
 
 /* ------------------ footer-----------------*/
 
+footer {
+    padding: 2px;
+    background-color:rgba(25, 25, 25, 0.8);
+}
+
+#MS-logo{
+    position: relative;
+    float: left;
+}
+
+footer ul {
+    margin-left: 35%;
+}
+
+#mindsight ul li{
+    display: inline-block;
+    text-decoration: none;
+}
+
+#copiright {
+    color:rgba(255, 255, 255, 0.659);
+    padding-bottom: 2px;
+    position: absolute;
+    margin-top: -60px;
+}
