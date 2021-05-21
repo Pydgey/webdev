@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Skills Graphics</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link rel="stylesheet" type="text/css" href="css/skills.css">
+
+    </head>
+    <body>
+        <main class="white">
+            <header id="header-logo">
+                <div class="logo"><img src="img/logo.png"></div>
+            
+                <div class="redes-sociais">
+                    
+                    <ul>
+                        <li><a href=""><img src="img/face.png"></a></li>
+                        <li><a href=""><img src="img/linkedin.png"></a></li>
+                        <li><a href=""><img src="img/email.png"></a></li>
+                    </ul>
+                </div>
+
+            </header>
+
+            <nav id="menu">
+                
+                <div id="botoes">
+                    <ul>
+                        <li><a href="../random template/home.html">Home</a></li>
+                        <li><a href="">Skills</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">E-Comerce</a></li>
+                        <li><a href="">Codes</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </main>
+
+        <main id="conteudo">
+            <article id="skill-table">
+
+                <div id="graphic">
+                    <img src="../random template/mindsight/grafico.png">
+                    <div id="dv-slider"></div>
+                </div>
+                
+                <script type="text/javascript">
+
+                    var imgs = [];
+                    var slider;
+                    var imgAtual;
+                    var maxImg;
+                    var tmp;
+
+                    function preCarregamento(){
+                        var s=1;
+                        for(var i=0;i<3;i++){
+                            imgs[i]=new Image();
+                            imgs[i].src="SL/s"+s+".png";
+                            s++;
+                        }
+                    }
+                    function carregar(img){
+                        slider.style.backgroundImage="url('"+imgs[img].src+"')";
+
+                    }
+                    
+                    function troca(){
+                        imgAtual++;
+                        if(imgAtual>maxImg){
+                            imgAtual=0
+                        }
+                        carregar(imgAtual);
+                    }
+
+                    function iniciar(){
+                        preCarregamento();
+                        imgAtual=0;
+                        maxImg=imgs.length-1;
+                        slider=document.getElementById("dv-slider");
+                        carregar(imgAtual);
+                        tmp = setInterval(troca,5000)
+                    }
+
+                    window.addEventListener("load",iniciar);
+
+
+                </script>
+
+                
+                <div id="tables"><ul>
+                    <li><table id="tb1">
+
+                        <tr id="tb1-title">
+                            <th>Atributo</th>
+                            <th>Você</th>
+                            <th>Média</th>
+                        </tr>
+                        <tr id="tb1-content1">
+                            <td>Capacidade analítica</td>
+                            <td>75,88</td>
+                            <td>75,00</td>
+                        </tr>
+                        <tr id="tb1-content2">
+                            <td>Pensamento conceitual</td>
+                            <td>87,45</td>
+                            <td>75,00</td>
+                        </tr>
+                        <tr id="tb1-content3">
+                            <td>Reflexão</td>
+                            <td>74,3</td>
+                            <td>75,00</td>
+                        </tr>
+                        <tr id="tb1-content4">
+                            <td>Pensamento criativo</td>
+                            <td>97,97</td>
+                            <td>75,00</td>
+                        </tr>
+                        <tr id="tb1-content5">
+                            <td>Planejamento e organização</td>
+                            <td>87,29</td>
+                            <td>75,00</td>
+                        </tr>
+
+                    </table></li>
+
+                    <li><table id="tb2">
+
+                        <tr id="tb2-title">
+                            <th>Atributo</th>
+                            <th>Você</th>
+                            <th>Média</th>
+                        </tr>
+                        <tr id="tb2-content1">
+                            <td>Comunicação</td>
+                            <td>71,75</td>
+                            <td>75,00</td>
+                        </tr>
+                        <tr id="tb2-content2">
+                            <td>Consideração pelos outros</td>
+                            <td>59,85</td>
+                            <td>75,00</td>
+                        </tr>
+                        <tr id="tb2-content3">
+                            <td>Influência</td>
+                            <td>51,82</td>
+                            <td>75,00</td>
+                        </tr>
+                        <tr id="tb2-content4">
+                            <td>Sociabilidade</td>
+                            <td>57,03</td>
+                            <td>75,00</td>
+                        </tr>
+                        <tr id="tb2-content5">
+                            <td>Facilitação</td>
+                            <td>58,52</td>
+                            <td>75,00</td>
+                        </tr>
+                        <tr id="tb2-content6">
+                            <td>Flexibilidade</td>
+                            <td>63,62</td>
+                            <td>75,00</td>
+                        </tr>
+
+                    </table></li>
+
+                    <li><table id="tb3">
+                        <tr id="tb3-title">
+                            <th>Atributo</th>
+                            <th>Você</th>
+                            <th>Média</th>
+                        </tr>
+                        <tr id="tb3-content1">
+                            <td>Estabilidade emocional</td>
+                            <td>99,55</td>
+                            <td>75,00</td>
+                        </tr>
+                        <tr id="tb3-content2">
+                            <td>Ambição</td>
+                            <td>90,19</td>
+                            <td>75,00</td>
+                        </tr>
+                        <tr id="tb3-content3">
+                            <td>Iniciativa</td>
+                            <td>54,09</td>
+                            <td>75,00</td>
+                        </tr>
+                        <tr id="tb3-content4">
+                            <td>Assertividade</td>
+                            <td>54,23</td>
+                            <td>75,00</td>
+                        </tr>
+                        <tr id="tb3-content5">
+                            <td>Tomada de riscos</td>
+                            <td>75,13</td>
+                            <td>75,00</td>
+                        </tr>
+                    </table></li>
+
+                </ul></div>
+
+            </article>
+
+            <footer>
+                <div id ="mindsight">
+                    <ul>
+                        <li><img src="../random template/img/logo-mindsight.png"></li>
+                        <li><div id="copiright">||Mindsight © 2015-2021. Todos os direitos reservados.</div></li>
+                    </ul>
+                </div>
+            </footer>
+
+        </main>
+    </body>
+
+</html>
